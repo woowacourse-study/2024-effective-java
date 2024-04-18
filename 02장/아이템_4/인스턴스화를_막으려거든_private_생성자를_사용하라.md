@@ -7,7 +7,7 @@
 <br> (객체지향적으로 사고하지 않는 사람들이 종종 남용하는 방식이기도 하다.)
 
 
-<img src="item4.png">
+<img src="item4.png" width = 500>
 
 하지만 `Math`와 `Arrays`처럼 기본 타입 값이나 배열 관련 메서드들을 모아놓을 수 있다.
 
@@ -91,8 +91,8 @@ public class UilityClass {
 ```
 
 > **AssertionError**는 코드가 개발자의 기대대로 작동하지 않는 경우를 나타내는 데 사용된다.
-<br>
-**AssertionError**는 프로그램의 논리적 오류나 잠재적인 버그를 포착할 때 유용하다.
+<br> **AssertionError**는 프로그램의 논리적 오류나 잠재적인 버그를 포착할 때 유용하다. 
+
 
 꼭 예외를 `AssertionError`를 던질 필요는 없지만, 클래스 안에서 실수로라도 생성자를 호출하지 않도록 해준다.
 
