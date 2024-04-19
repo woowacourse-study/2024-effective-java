@@ -17,37 +17,38 @@ def update_readme():
     md_files, readme_path = find_markdowns()
 
     # 파일 정보를 읽어 정렬
-    entries = []
+    entries = {}
     for md_file in md_files:
         chapter, item, title, author = parse_md_filename(md_file)
+        key = (int(chapter), int(item), title)
         link = f"https://github.com/{os.getenv('GITHUB_REPOSITORY')}/blob/master/{md_file}"
-        entries.append((int(chapter), int(item), title, author, link))
+        if key not in entries:
+            entries[key] = []
+        entries[key].append((author, link))
 
     # 장과 아이템 번호로 정렬
-    entries.sort()
+    sorted_entries = sorted(entries.items())
 
     # README.md 업데이트
     with open(readme_path, 'r+', encoding="UTF-8") as readme:
         content = readme.readlines()
         insert_index = content.index('## 글 목록\n') + 2  # '## 글 목록' 섹션을 찾아 그 다음에 삽입
 
-
-        header = '| 장 | 아이템 | 주제(작성글 링크) | 작성자 |\n'
-        divider = '|:---:|:---:|:--------:|:-----:|\n'  # 열 구분자 추가
-        if header not in content:
+        header = '<table>\n<tr><th>장</th><th>아이템🍳</th><th>주제</th><th>작성자의 글</th></tr>\n'
+        if '<table>' not in content:
             content.insert(insert_index, header)
             insert_index += 1
-        if divider not in content:
-            content.insert(insert_index, divider)
-            insert_index += 1
 
-        for entry in entries:
-            chapter, item, title, author, link = entry
-            title = title.replace("_",  " ")
-            line = f'| {chapter}장 | 아이템 {item} | [{title}]({link}) | {author} |\n'
+        for entry, authors_links in sorted_entries:
+            chapter, item, title = entry
+            title = title.replace("_"," ")
+            authors_links_str = ', '.join([f'<a href="{link}">{author}의 글</a>' for author, link in authors_links])
+            line = f'<tr><td>{chapter}장</td><td>아이템 {item}</td><td>{title}</td><td>{authors_links_str}</td></tr>\n'
             if line not in content:
                 content.insert(insert_index, line)
                 insert_index += 1
+
+        content.insert(insert_index, '</table>\n')
 
         readme.seek(0)
         readme.writelines(content)
