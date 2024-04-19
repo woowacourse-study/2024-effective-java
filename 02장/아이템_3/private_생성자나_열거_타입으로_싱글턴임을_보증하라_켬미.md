@@ -98,18 +98,32 @@ public class Kyummi {
 - 불변 객체
 
 > 제네릭 싱글톤 팩토리 예시
-> Collections.reverseOrder . Collections.emptySet
+> Collections.reverseOrder, Collections.emptySet
 
 
 ```java
-// 불변 객체
+// 불변 객체 (싱글톤 객체 : UnaryOperator)
 private static UnaryOperator<Object> IDENTITY_FN = (t) -> t;
 
-// 어떤 타입으로도 사용 가능
+// 제네릭 싱글톤 팩토리 구현 (어떤 타입으로도 사용 가능)
 @SuppressWarnings("unchecked")
 public static <T> UnaryOperator<T> identityFunction() {
 	return (UnaryOperator<T>) IDENTITY_FN;
 }
+```
+
+
+```java
+// 사용 예제
+String [] strings = {"켬미", "초롱", "호티"};
+UnaryOperator<String> sameString = identityFunction();
+for (String s: strings) 
+	System.out.println(sameString.apply(s));
+
+Number [] numbers = {1, 2.0, 3L};
+UnaryOperator<Number> sameNumbers = identityFunction();
+for (Number s: numbers)
+		System.out.println(sameNumbers.apply(s));
 ```
 
 <br>
@@ -155,10 +169,81 @@ public class Kyummi {
 - 위에 예시로 말하면) 가짜 Kyummi가 탄생한다는 말 ! 싫으면 readResolve 메서드 추가
 
 ```java
-private Kyummi readResolve() {
-		return INSTANCE;
-		}
+public class Kyummi implements Serializable {
+    
+    private Kyummi readResolve() {
+        return INSTANCE;
+    }
+}
 ```
+<br>
+
+
+##### readResolve를 사용하는 예제 !
+
+```java
+class Singleton implements Serializable {
+    private static final long serialVersionUID = 1L;
+    private static final Singleton INSTANCE = new Singleton();
+
+    private Singleton() {}
+
+    public static Singleton getInstance() {
+        return INSTANCE;
+    }
+
+    // readResolve 메서드 구현
+    protected Object readResolve() {
+        System.out.println("readResolve() 메서드가 호출되었습니다.");
+        return INSTANCE;
+    }
+
+    public static void main(String[] args) {
+        try {
+            // 객체를 직렬화
+            ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("singleton.ser"));
+            out.writeObject(INSTANCE);
+            out.close();
+
+            // 객체를 역직렬화
+            ObjectInputStream in = new ObjectInputStream(new FileInputStream("singleton.ser"));
+            Singleton deserializedInstance = (Singleton) in.readObject();
+            in.close();
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+<br>
+
+실제로 실행해보니 `ObjectInputStream` 객체의 `readObject()`이 호출되면 해당 객체의 `readResolve()`가 호출되는 것을 확인할 수 있습니다 !
+
+
+> 역직렬화 때 원하는 객체 반환하게 설정하는 법
+>
+> 1. Serializable 인터페이스를 implements한다.
+> 2. 역직렬화 시, 반환할 객체가 지정되있으면 readResolve() 정의한다.
+
+<br>
+
+```java
+ObjectInputStream in = new ObjectInputStream(new FileInputStream("singleton.ser"));
+
+// 해당 함수에서 readResolve() 가 객체 내 정의되어있으면 호출
+Singleton deserializedInstance = (Singleton) in.readObject();
+```
+
+readResolve() 메서드는 Serializable 인터페이스와 밀접하게 연관 O
+하지만, Serializable 인터페이스에 직접 선언된 메서드는 아니다 !
+
+<br>
+
+**readResolve() 메서드는 Serializable 인터페이스에 포함되어 있는 것이 아니라, 자바 직렬화 메커니즘의 일부로써 동작하는 것입니다!**
+
+더 쉽게 말하면 자바 직렬화 매커니즘에는 존재하는 메서드이지만, 직렬화를 도와주는 Serializable 인터페이스에 기존 메서드는 아니다 !
+
 
 <br>
 
