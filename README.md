@@ -84,6 +84,10 @@
 
 <table>
 <tr><th>장</th><th>아이템🍳</th><th>주제</th><th>작성자의 글</th></tr>
+<tr><td>2장</td><td>아이템 1</td><td>생성자 대신 정적 팩터리 메서드를 고려하라</td><td><a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/02장/아이템_1/생성자_대신_정적_팩터리_메서드를_고려하라_배키.md">배키의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/02장/아이템_1/생성자_대신_정적_팩터리_메서드를_고려하라_제우스.md">제우스의 글</a></td></tr>
+</table>
+<table>
+<tr><th>장</th><th>아이템🍳</th><th>주제</th><th>작성자의 글</th></tr>
 <tr><td>2장</td><td>아이템 1</td><td>생성자 대신 정적 팩터리 메서드를 고려하라</td><td><a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/02장/아이템_1/생성자_대신_정적_팩터리_메서드를_고려하라_제우스.md">제우스의 글</a></td></tr>
 <tr><td>2장</td><td>아이템 1</td><td>생성자 대신 정적 펙터리 메서드를 고려하라</td><td><a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/02장/아이템_1/생성자_대신_정적_펙터리_메서드를_고려하라_배키.md">배키의 글</a></td></tr>
 <tr><td>2장</td><td>아이템 2</td><td>생성자에 매개변수가 많다면 빌더를 고려하라</td><td><a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/02장/아이템_2/생성자에_매개변수가_많다면_빌더를_고려하라_제우스.md">제우스의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/02장/아이템_2/생성자에_매개변수가_많다면_빌더를_고려하라_배키.md">배키의 글</a></td></tr>
