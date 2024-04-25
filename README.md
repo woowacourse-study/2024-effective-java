@@ -83,6 +83,17 @@
 ## 글 목록
 
 ### 2 장
+<table>
+<tr><th>아이템🍳</th><th>주제</th><th>작성자의 글</th></tr>
+<tr><td> 1 </td><td>생성자 대신 정적 팩터리 메서드를 고려하라</td><td><a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/02장/아이템_1/생성자_대신_정적_팩터리_메서드를_고려하라_배키.md">배키의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/02장/아이템_1/생성자_대신_정적_팩터리_메서드를_고려하라_제우스.md">제우스의 글</a></td></tr>
+<tr><td> 2 </td><td>생성자에 매개변수가 많다면 빌더를 고려하라</td><td><a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/02장/아이템_2/생성자에_매개변수가_많다면_빌더를_고려하라_제우스.md">제우스의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/02장/아이템_2/생성자에_매개변수가_많다면_빌더를_고려하라_배키.md">배키의 글</a></td></tr>
+<tr><td> 3 </td><td>private 생성자나 열거 타입으로 싱글턴임을 보증하라</td><td><a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/02장/아이템_3/private_생성자나_열거_타입으로_싱글턴임을_보증하라_켬미.md">켬미의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/02장/아이템_3/private_생성자나_열거_타입으로_싱글턴임을_보증하라_폰드.md">폰드의 글</a></td></tr>
+<tr><td> 4 </td><td>인스턴스화를 막으려거든 private 생성자를 사용하라</td><td><a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/02장/아이템_4/인스턴스화를_막으려거든_private_생성자를_사용하라_프람.md">프람의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/02장/아이템_4/인스턴스화를_막으려거든_private_생성자를_사용하라_호티.md">호티의 글</a></td></tr>
+<tr><td> 5 </td><td>자원을 직접 명시하지 말고 의존 객체 주입을 사용하라</td><td><a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/02장/아이템_5/자원을_직접_명시하지_말고_의존_객체_주입을_사용하라_호티.md">호티의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/02장/아이템_5/자원을_직접_명시하지_말고_의존_객체_주입을_사용하라_프람.md">프람의 글</a></td></tr>
+<tr><td> 6 </td><td>불필요한 객체 생성을 피하라</td><td><a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/02장/아이템_6/불필요한_객체_생성을_피하라_켬미.md">켬미의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/02장/아이템_6/불필요한_객체_생성을_피하라_폰드.md">폰드의 글</a></td></tr>
+<tr><td> 7 </td><td>다 쓴 객체 참조를 해제하라</td><td><a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/02장/아이템_7/다_쓴_객체_참조를_해제하라_도비.md">도비의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/02장/아이템_7/다_쓴_객체_참조를_해제하라_초롱.md">초롱의 글</a></td></tr>
+<tr><td> 9 </td><td>try-finally보다는 try-with-resources를 사용하라</td><td><a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/02장/아이템_9/try-finally보다는_try-with-resources를_사용하라_도비.md">도비의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/02장/아이템_9/try-finally보다는_try-with-resources를_사용하라_초롱.md">초롱의 글</a></td></tr>
+</table>
 
 ### 3 장
 
