@@ -96,6 +96,10 @@
 </table>
 
 ### 3 장
+<table>
+<tr><th>아이템🍳</th><th>주제</th><th>작성자의 글</th></tr>
+<tr><td> 14 </td><td>Comparable을 구현할지 고려하라</td><td><a href="https://github.com/koust6u/2024-effective-java/blob/master/03장/아이템_14/Comparable을_구현할지_고려하라_프람.md">프람의 글</a></td></tr>
+</table>
 
 ### 4 장
 
