@@ -3,7 +3,6 @@
 > 작성자: 프람
 > 
 > 작성일시: 2024\_04\_25  
-> 내용: [Effective Java 3/E](https://www.yes24.com/Product/Goods/90870798) 3장-아이템14
 
 ## 01\. Comparable이란?
 
