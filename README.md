@@ -102,6 +102,10 @@
 </table>
 
 ### 4 장
+<table>
+<tr><th>아이템🍳</th><th>주제</th><th>작성자의 글</th></tr>
+<tr><td> 17 </td><td>변경 가능성을 최소화하라</td><td><a href="https://github.com/koust6u/2024-effective-java/blob/master/04장/아이템_17/변경_가능성을_최소화하라_프람.md">프람의 글</a></td></tr>
+</table>
 
 ### 5 장
 
