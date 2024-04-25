@@ -96,6 +96,11 @@
 </table>
 
 ### 3 장
+<table>
+<tr><th>아이템🍳</th><th>주제</th><th>작성자의 글</th></tr>
+<tr><td> 12 </td><td>toString을 항상 재정의하라</td><td><a href="https://github.com/kyum-q/2024-effective-java/blob/master/03장/아이템_12/toString을_항상_재정의하라_켬미.md">켬미의 글</a></td></tr>
+<tr><td> 13 </td><td>clone 재정의는 주의해서 진행하라</td><td><a href="https://github.com/kyum-q/2024-effective-java/blob/master/03장/아이템_13/clone_재정의는_주의해서_진행하라_켬미.md">켬미의 글</a></td></tr>
+</table>
 
 ### 4 장
 
