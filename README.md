@@ -102,12 +102,15 @@
 <tr><td> 13 </td><td>clone 재정의는 주의해서 진행하라</td><td><a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/03장/아이템_13/clone_재정의는_주의해서_진행하라_켬미.md">켬미의 글</a></td></tr>
 <tr><td> 10 </td><td>equals는 일반 규칙을 지켜</td><td><a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/03장/아이템_10/equals는_일반_규칙을_지켜_재정의하라.md">재정의하라의 글</a></td></tr>
 <tr><td> 11 </td><td>equals를 재정의하려거든 hashCode도 재정의하라</td><td><a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/03장/아이템_11/equals를_재정의하려거든_hashCode도_재정의하라_호티.md">호티의 글</a></td></tr>
+<tr><td> 14 </td><td>Comparable을 구현할지 고려하라</td><td><a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/03장/아이템_14/Comparable을_구현할지_고려하라_초롱.md">초롱의 글</a></td></tr>
 </table>
 
 ### 4 장
 <table>
 <tr><th>아이템🍳</th><th>주제</th><th>작성자의 글</th></tr>
 <tr><td> 15 </td><td>클래스와 멤버의 접근 권한을 최소화하라</td><td><a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/04장/아이템_15/클래스와_멤버의_접근_권한을_최소화하라_제우스.md">제우스의 글</a></td></tr>
+<tr><td> 16 </td><td>public 클래스에서는 public 필드가 아닌 접근자 메서드를 사용하라</td><td><a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/04장/아이템_16/public_클래스에서는_public_필드가_아닌_접근자_메서드를_사용하라_제우스.md">제우스의 글</a></td></tr>
+<tr><td> 17 </td><td>변경 가능성을 최소화하라</td><td><a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/04장/아이템_17/변경_가능성을_최소화하라_초롱.md">초롱의 글</a></td></tr>
 <tr><td> 16 </td><td>public 클래스에서는 public 필드가 아닌 접근자 메서드를 사용하라</td><td><a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/04장/아이템_16/public_클래스에서는_public_필드가_아닌_접근자_메서드를_사용하라_제우스.md">제우스의 글</a></td></tr>
 </table>
 
