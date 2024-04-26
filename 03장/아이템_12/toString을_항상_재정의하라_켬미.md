@@ -185,20 +185,22 @@ class PhoneNumbers {
 
 <br>
 
-```java
-// 전화번호: 포맷을 명시 O
-@Override 
-public Strng toString() {
-	return String.format("%03d-%03d-%04d",
-		areaCode, prefix, lineNum);
-} 
 
-// 약물: 포맷을 명시 X
-// 그냥 멋지게 출력 ex)  유형=사랑, 냄새=테레빈유
-@Override 
+```java
+// 전화번호: 포맷 명시 O
+// 이 문자열은 "XXX-YYY-ZZZZ" 형태의 12글자로 구성된다.
+// XXX 는 지역 코드, YYY는 프리픽스, ZZZZ는 가입자 번호이다
+@Override
 public Strng toString() {
-	return "유형=" + category + " , 냄새=" + smell
-}
+        return String.format("%03d-%03d-%04d",
+        areaCode, prefix, lineNum);
+        }
+
+// 약물: 포맷 명시 X
+// 그냥 멋지게 출력 ex)  유형=사랑, 냄새=테레빈유
+@Override
+public Strng toString() {
+        }
 ```
 
 <br>
