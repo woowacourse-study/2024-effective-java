@@ -99,6 +99,7 @@
 <table>
 <tr><th>아이템🍳</th><th>주제</th><th>작성자의 글</th></tr>
 <tr><td> 10 </td><td>equals는 일반 규약을 지켜 재정의하라</td><td><a href="https://github.com/Dobby-Kim/2024-effective-java/blob/master/03장/아이템_10/equals는_일반_규약을_지켜_재정의하라_도비.md">도비의 글</a></td></tr>
+<tr><td> 11 </td><td>equals를 재정의하려거든 hashCode도 재정의하라</td><td><a href="https://github.com/Dobby-Kim/2024-effective-java/blob/master/03장/아이템_11/equals를_재정의하려거든_hashCode도_재정의하라_도비.md">도비의 글</a></td></tr>
 </table>
 
 ### 4 장
