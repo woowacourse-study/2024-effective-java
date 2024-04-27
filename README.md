@@ -111,7 +111,7 @@
 <tr><td> 12 </td><td> toString을 항상 재정의하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/03장/아이템_12/toString을_항상_재정의하라_폰드.md">폰드의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/03장/아이템_12/toString을_항상_재정의하라_켬미.md">켬미의 글</a> </td></tr>
 <tr><td> 11 </td><td> equals를 재정의하려거든 hashCode도 재정의하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/03장/아이템_11/equals를_재정의하려거든_hashCode도_재정의하라_호티.md">호티의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/03장/아이템_11/equals를_재정의하려거든_hashCode도_재정의하라_도비.md">도비의 글</a> </td></tr>
 <tr><td> 10 </td><td> equals는 일반 규칙을 지켜 재정의하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/03장/아이템_10/equals는_일반_규칙을_지켜_재정의하라_호티.md">호티의 글</a> </td></tr>
-<tr><td> 10 </td><td> equals는 일반 규약을 지켜 재정의하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/03장/아이템_10/equals는_일반_규약을_지켜_재정의하라_도비.md">도비의 글</a> </td></tr>
+<tr><td> 10 </td><td> equals는 일반 규약을 지켜 재정의하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/03장/아이템_10/equals는_일반_규약을_지켜_재정의하라_호티.md">호티의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/03장/아이템_10/equals는_일반_규약을_지켜_재정의하라_도비.md">도비의 글</a> </td></tr>
 </table>
 
 ### 4 장
