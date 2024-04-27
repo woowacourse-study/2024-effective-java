@@ -87,11 +87,11 @@
 > 
 > main branch에 .md 형식의 파일이 push 될 때 작성된 README의 `## 글 목록`이 자동으로 업데이트되고 있습니다.
 > 
-> fork한 repo에서도 main brach에 commit + push를 하면 github Action으로 인해 forked repo에서도 README.md 파일이 업데이트 됩니다.
+> fork한 repo에서도 main brach에 commit + push를 하면 github Action으로 인해 README.md 파일이 업데이트 됩니다.
 > 
-> 이로 인해 PR 요청 시에 conflict가 발생할 수 있으니 별도의 branch를 통해 PR을 요청하는 것을 권장합니다.
+> 이로 인해 `forked_repo/main` -> `main` 으로 PR 요청 시에 conflict가 발생할 수 있으니 별도의 branch를 통해 PR을 요청하는 것을 권장합니다.
 >
-> 
+
 
 
 ## 글 목록
@@ -117,7 +117,6 @@
 <tr><td> 13 </td><td> clone 재정의는 주의해서 진행하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/03장/아이템_13/clone_재정의는_주의해서_진행하라_켬미.md">켬미의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/03장/아이템_13/clone_재정의는_주의해서_진행하라_폰드.md">폰드의 글</a> </td></tr>
 <tr><td> 12 </td><td> toString을 항상 재정의하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/03장/아이템_12/toString을_항상_재정의하라_폰드.md">폰드의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/03장/아이템_12/toString을_항상_재정의하라_켬미.md">켬미의 글</a> </td></tr>
 <tr><td> 11 </td><td> equals를 재정의하려거든 hashCode도 재정의하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/03장/아이템_11/equals를_재정의하려거든_hashCode도_재정의하라_호티.md">호티의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/03장/아이템_11/equals를_재정의하려거든_hashCode도_재정의하라_도비.md">도비의 글</a> </td></tr>
-<tr><td> 10 </td><td> equals는 일반 규칙을 지켜 재정의하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/03장/아이템_10/equals는_일반_규칙을_지켜_재정의하라_호티.md">호티의 글</a> </td></tr>
 <tr><td> 10 </td><td> equals는 일반 규약을 지켜 재정의하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/03장/아이템_10/equals는_일반_규약을_지켜_재정의하라_호티.md">호티의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/03장/아이템_10/equals는_일반_규약을_지켜_재정의하라_도비.md">도비의 글</a> </td></tr>
 </table>
 
