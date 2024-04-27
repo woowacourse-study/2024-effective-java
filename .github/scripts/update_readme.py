@@ -45,26 +45,10 @@ def update_readme():
 
     with open(readme_path, 'r+', encoding="UTF-8") as readme:
         content = readme.readlines()
-        list_section_start_index = content.index('## 글 목록\n') + 1
-        list_section_end_index = content.index('------\n')
-        chapter_tables = {}
-        current_chapter = 0
-
-        # 장의 시작 위치와 테이블의 위치를 찾기
-        for i in range(list_section_start_index, list_section_end_index):
-            if re.search(r'^\s*### (\d+) 장', content[i]):
-                current_chapter = int(re.search(r'(\d+)', content[i]).group())
-                if current_chapter not in chapter_tables:
-                    chapter_tables[current_chapter] = {'start': i + 1, 'end': i + 1}
-
-            if current_chapter and '<table>' in content[i]:
-                chapter_tables[current_chapter]['start'] = i
-            if current_chapter and '</table>' in content[i]:
-                chapter_tables[current_chapter]['end'] = i
-                current_chapter = 0
 
         # 각 장의 테이블을 업데이트 또는 생성
         for chapter in sorted_chapters:
+            chapter_tables = find_chapter_table_index(content)
             if chapter not in chapter_tables or chapter_tables[chapter]['end'] == chapter_tables[chapter]['start']:
                 insert_index = chapter_tables[chapter]['start']
                 header = '<table>\n<tr><th>아이템🍳</th><th>주제</th><th>작성자의 글</th></tr>\n'
@@ -109,6 +93,26 @@ def update_readme():
         readme.seek(0)
         readme.writelines(content)
         readme.truncate()
+
+
+def find_chapter_table_index(content):
+    list_section_start_index = content.index('## 글 목록\n') + 1
+    list_section_end_index = content.index('------\n')
+    chapter_tables = {}
+    current_chapter = 0
+    # 장의 시작 위치와 테이블의 위치를 찾기
+    for i in range(list_section_start_index, list_section_end_index):
+        if re.search(r'^\s*### (\d+) 장', content[i]):
+            current_chapter = int(re.search(r'(\d+)', content[i]).group())
+            if current_chapter not in chapter_tables:
+                chapter_tables[current_chapter] = {'start': i + 1, 'end': i + 1}
+
+        if current_chapter and '<table>' in content[i]:
+            chapter_tables[current_chapter]['start'] = i
+        if current_chapter and '</table>' in content[i]:
+            chapter_tables[current_chapter]['end'] = i
+            current_chapter = 0
+    return chapter_tables
 
 
 if __name__ == '__main__':
