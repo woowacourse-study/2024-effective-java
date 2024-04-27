@@ -12,6 +12,7 @@ def find_markdowns():
         for file in files:
             if file.endswith('.md') and 'README' not in file:
                 rel_path = os.path.relpath(os.path.join(root, file), start=target_dir)  # Get relative path
+                print(rel_path)
                 md_files.append(rel_path)
     return md_files, readme_path
 
@@ -23,6 +24,7 @@ def parse_md_filename(filename):
     pattern = r'(\d+)장/아이템_(\d+)/([^/]+)_(\w+)\.md'
     match = re.match(pattern, filename)
     if match:
+        print(match.groups())
         return match.groups()
     return None
 
