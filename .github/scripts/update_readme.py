@@ -100,8 +100,8 @@ def update_readme():
                     chapter_tables[chapter]['end'] += 1  # 중요: 테이블 끝 위치 갱신
                     for after_current_chapter in sorted_chapters:
                         if after_current_chapter > chapter:
-                            chapter_tables[chapter]['start'] += 1  
-                            chapter_tables[chapter]['end'] += 1
+                            chapter_tables[after_current_chapter]['start'] += 1
+                            chapter_tables[after_current_chapter]['end'] += 1
                 else:
                     existing_index = content.index(existing_entries[item])
                     content[existing_index] = line
