@@ -12,7 +12,6 @@ def find_markdowns():
         for file in files:
             if file.endswith('.md') and 'README' not in file:
                 rel_path = os.path.relpath(os.path.join(root, file), start=target_dir)  # Get relative path
-                print(rel_path)
                 md_files.append(rel_path)
     return md_files, readme_path
 
@@ -24,7 +23,6 @@ def parse_md_filename(filename):
     pattern = r'(\d+)장/아이템_(\d+)/([^/]+)_(\w+)\.md'
     match = re.match(pattern, filename)
     if match:
-        print(match.groups())
         return match.groups()
     return None
 
@@ -90,7 +88,7 @@ def update_readme():
                     continue
                 title = title.replace("_", " ")
                 authors_links_str = ', '.join([f'<a href="{link}">{author}의 글</a>' for author, link in authors_links])
-                line = f'<tr><td> {item} </td><td>{title}</td><td>{authors_links_str}</td></tr>\n'
+                line = f'<tr><td> {item} </td><td> {title} </td><td> {authors_links_str} </td></tr>\n'
                 if item not in existing_entries:
                     current_line = content[insert_index]
                     item_num = -1
@@ -99,7 +97,11 @@ def update_readme():
                     while insert_index < table_end and item_num < item:
                         insert_index += 1
                     content.insert(insert_index, line)
-                    table_end += 1  # 중요: 테이블 끝 위치 갱신
+                    chapter_tables[chapter]['end'] += 1  # 중요: 테이블 끝 위치 갱신
+                    for after_current_chapter in sorted_chapters:
+                        if after_current_chapter > chapter:
+                            chapter_tables[chapter]['start'] += 1  
+                            chapter_tables[chapter]['end'] += 1
                 else:
                     existing_index = content.index(existing_entries[item])
                     content[existing_index] = line
