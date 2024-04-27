@@ -81,10 +81,17 @@
 <br>
 
 
-> 현재 레포지토리에서는 github Action이 작동 중 입니다.
-> main branch에 .md 형식의 파일이 push 될 때 작성된 글 목록이 자동으로 업데이트되고 있습니다.
-> fork한 repo에서도 main brach에 commit하여 PR을 요청하면 github Action으로 인해 업데이트된 README.md 파일이 업데이트 됩니다.
+>
+>
+>💡 현재 레포지토리에서는 github Action이 작동 중 입니다.
+> 
+> main branch에 .md 형식의 파일이 push 될 때 작성된 README의 `## 글 목록`이 자동으로 업데이트되고 있습니다.
+> 
+> fork한 repo에서도 main brach에 commit + push를 하면 github Action으로 인해 forked repo에서도 README.md 파일이 업데이트 됩니다.
+> 
 > 이로 인해 PR 요청 시에 conflict가 발생할 수 있으니 별도의 branch를 통해 PR을 요청하는 것을 권장합니다.
+>
+> 
 
 
 ## 글 목록
