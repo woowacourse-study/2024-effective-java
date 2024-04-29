@@ -74,14 +74,14 @@ def update_readme():
                 title = title.replace("_", " ")
                 authors_links_str = ', '.join([f'<a href="{link}">{author}의 글</a>' for author, link in authors_links])
                 line = f'<tr><td> {item} </td><td> {title} </td><td> {authors_links_str} </td></tr>\n'
-                if item not in existing_entries:
+                if item not in existing_entries.keys():
                     current_line = content[insert_index]
                     item_num = -1
                     if '<tr><td>' in current_line:
                         item_num = int(content[insert_index].split('<td>')[1].split('</td>')[0].strip())
                         while insert_index < table_end and item_num < item:
                             insert_index += 1
-                    content.insert(insert_index, line)
+                    content.insert(insert_index+1, line)
                     # chapter_tables[chapter]['end'] += 1  # 중요: 테이블 끝 위치 갱신
                     
                 else:
