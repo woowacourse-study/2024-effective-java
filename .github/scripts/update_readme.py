@@ -82,7 +82,7 @@ def update_readme():
                         while insert_index < table_end and item_num < item:
                             insert_index += 1
                     content.insert(insert_index, line)
-                    // chapter_tables[chapter]['end'] += 1  # 중요: 테이블 끝 위치 갱신
+                    # chapter_tables[chapter]['end'] += 1  # 중요: 테이블 끝 위치 갱신
                     
                 else:
                     existing_index = content.index(existing_entries[item])
