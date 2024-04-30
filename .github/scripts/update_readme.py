@@ -65,7 +65,7 @@ def update_readme():
                     item = int(line.split('<td>')[1].split('</td>')[0].strip())
                     existing_entries[item] = line
 
-            insert_index = table_start
+            insert_index = table_end
             for entry, authors_links in sorted_entries:
                 chapter_tables = find_chapter_table_index(content)
                 chapter_num, item, title = entry
@@ -79,9 +79,9 @@ def update_readme():
                     item_num = -1
                     if '<tr><td>' in current_line:
                         item_num = int(content[insert_index].split('<td>')[1].split('</td>')[0].strip())
-                        while insert_index < table_end and item_num < item:
-                            insert_index += 1
-                    content.insert(insert_index+1, line)
+                        while insert_index > table_start and item_num > item:
+                            insert_index -= 1
+                    content.insert(insert_index, line)
                     # chapter_tables[chapter]['end'] += 1  # 중요: 테이블 끝 위치 갱신
                     
                 else:
