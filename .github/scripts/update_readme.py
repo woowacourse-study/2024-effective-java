@@ -32,13 +32,17 @@ def update_readme():
     entries = {}
     chapters = set()
     for md_file in md_files:
-        chapter, item, title, author = parse_md_filename(md_file)
-        key = (int(chapter), int(item), title)
-        link = f"https://github.com/{os.getenv('GITHUB_REPOSITORY')}/blob/master/{md_file}"
-        if key not in entries:
-            entries[key] = []
-        entries[key].append((author, link))
-        chapters.add(int(chapter))
+        try:
+            chapter, item, title, author = parse_md_filename(md_file)
+            key = (int(chapter), int(item), title)
+            link = f"https://github.com/{os.getenv('GITHUB_REPOSITORY')}/blob/master/{md_file}"
+            if key not in entries:
+                entries[key] = []
+            entries[key].append((author, link))
+            chapters.add(int(chapter))
+        except:
+            print("형식에 맞지 않는 파일 발견: " + chapter, item, title, author)
+        
 
     sorted_entries = sorted(entries.items(),reverse=True)
     sorted_chapters = sorted(chapters,reverse=True)
