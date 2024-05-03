@@ -43,7 +43,8 @@ def update_readme():
             entries[key].append((author, link))
             chapters.add(int(chapter))
         except Exception as e:
-            print('이거 이상한 파일인데요? -> ' + e + " path: " + md_files_with_absolute_path[e])
+            file_name = str(e)
+            print('이거 이상한 파일인데요? -> ' + file_name + " path: " + md_files_with_absolute_path[file_name])
 
     sorted_entries = sorted(entries.items(),reverse=True)
     sorted_chapters = sorted(chapters,reverse=True)
