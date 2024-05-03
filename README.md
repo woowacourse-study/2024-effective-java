@@ -1,4 +1,7 @@
-# 이펙티브 자바 스터디
+<p align='center'>
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=300&section=header&text=Effective%20Java%20Study&fontSize=50&animation=fadeIn&fontAlignY=38&desc=@woowacourse%206th%20BackEnd%20Crews&descAlignY=51&descAlign=62"/>
+</p>
+<div align='center">
 
 
 우아한테크코스 6기 레벨 2 이펙티브 자바 스터디입니다.
@@ -146,6 +149,7 @@
 
 ### 12 장
 
+</div>
 
 ------
 
