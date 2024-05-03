@@ -1,6 +1,6 @@
 **/.idea/**
 **/.gitkeep
 
-*.xml
+**/.github/**
 
-README.md
+**/README.md
