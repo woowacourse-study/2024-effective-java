@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03장/아이템_11/equals를_재정의하려거든_hashCode도_재정의하라_도비.md",
+                "file": "04장/아이템_20/추상_클래스보다는_인터페이스를_사용하라_도비.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 238.50271224975586
+    "width": 329.50390243530273
   },
   "right": {
     "id": "bf86da9931479144",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03장/아이템_11/equals를_재정의하려거든_hashCode도_재정의하라_도비.md",
+                "file": "04장/아이템_20/추상_클래스보다는_인터페이스를_사용하라_도비.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03장/아이템_11/equals를_재정의하려거든_hashCode도_재정의하라_도비.md",
+                "file": "04장/아이템_20/추상_클래스보다는_인터페이스를_사용하라_도비.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03장/아이템_11/equals를_재정의하려거든_hashCode도_재정의하라_도비.md"
+                "file": "04장/아이템_20/추상_클래스보다는_인터페이스를_사용하라_도비.md"
               }
             }
           }
@@ -146,11 +146,11 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "26aa8006fc022203",
+  "active": "102c3b0b4c58a034",
   "lastOpenFiles": [
+    "03장/아이템_11/equals를_재정의하려거든_hashCode도_재정의하라_도비.md",
     "03장/아이템_11/equals를_재정의하려거든_hashCode도_재정의하라_호티.md",
     "03장/백지 복습.md",
-    "03장/아이템_11/equals를_재정의하려거든_hashCode도_재정의하라_도비.md",
     "백지 복습.md",
     "04장/아이템_20/추상_클래스보다는_인터페이스를_사용하라_도비.md",
     "03장/아이템_12/Item12. toString을 항상 재정의하라.md",
