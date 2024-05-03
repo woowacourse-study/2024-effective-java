@@ -40,8 +40,8 @@ def update_readme():
         entries[key].append((author, link))
         chapters.add(int(chapter))
 
-    sorted_entries = sorted(entries.items())
-    sorted_chapters = sorted(chapters)
+    sorted_entries = sorted(entries.items(),reverse=True)
+    sorted_chapters = sorted(chapters,reverse=True)
 
     with open(readme_path, 'r+', encoding="UTF-8") as readme:
         content = readme.readlines()
@@ -82,12 +82,8 @@ def update_readme():
                         while insert_index > table_start and item_num > item:
                             insert_index -= 1
                     content.insert(insert_index, line)
-
-                    chapter_tables[chapter]['end'] += 1  # 중요: 테이블 끝 위치 갱신
-                    for after_current_chapter in sorted_chapters:
-                        if after_current_chapter > chapter:
-                            chapter_tables[after_current_chapter]['start'] += 1
-                            chapter_tables[after_current_chapter]['end'] += 1
+                    # chapter_tables[chapter]['end'] += 1  # 중요: 테이블 끝 위치 갱신
+                    
                 else:
                     existing_index = content.index(existing_entries[item])
                     content[existing_index] = line
