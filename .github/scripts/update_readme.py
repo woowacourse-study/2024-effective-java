@@ -40,31 +40,15 @@ def update_readme():
         entries[key].append((author, link))
         chapters.add(int(chapter))
 
-    sorted_entries = sorted(entries.items())
-    sorted_chapters = sorted(chapters)
+    sorted_entries = sorted(entries.items(),reverse=True)
+    sorted_chapters = sorted(chapters,reverse=True)
 
     with open(readme_path, 'r+', encoding="UTF-8") as readme:
         content = readme.readlines()
-        list_section_start_index = content.index('## 글 목록\n') + 1
-        list_section_end_index = content.index('------\n')
-        chapter_tables = {}
-        current_chapter = 0
-
-        # 장의 시작 위치와 테이블의 위치를 찾기
-        for i in range(list_section_start_index, list_section_end_index):
-            if re.search(r'^\s*### (\d+) 장', content[i]):
-                current_chapter = int(re.search(r'(\d+)', content[i]).group())
-                if current_chapter not in chapter_tables:
-                    chapter_tables[current_chapter] = {'start': i + 1, 'end': i + 1}
-
-            if current_chapter and '<table>' in content[i]:
-                chapter_tables[current_chapter]['start'] = i
-            if current_chapter and '</table>' in content[i]:
-                chapter_tables[current_chapter]['end'] = i
-                current_chapter = 0
 
         # 각 장의 테이블을 업데이트 또는 생성
         for chapter in sorted_chapters:
+            chapter_tables = find_chapter_table_index(content)
             if chapter not in chapter_tables or chapter_tables[chapter]['end'] == chapter_tables[chapter]['start']:
                 insert_index = chapter_tables[chapter]['start']
                 header = '<table>\n<tr><th>아이템🍳</th><th>주제</th><th>작성자의 글</th></tr>\n'
@@ -81,23 +65,25 @@ def update_readme():
                     item = int(line.split('<td>')[1].split('</td>')[0].strip())
                     existing_entries[item] = line
 
-            insert_index = table_start
+            insert_index = table_end
             for entry, authors_links in sorted_entries:
+                chapter_tables = find_chapter_table_index(content)
                 chapter_num, item, title = entry
                 if chapter_num != chapter:
                     continue
                 title = title.replace("_", " ")
                 authors_links_str = ', '.join([f'<a href="{link}">{author}의 글</a>' for author, link in authors_links])
-                line = f'<tr><td> {item} </td><td>{title}</td><td>{authors_links_str}</td></tr>\n'
-                if item not in existing_entries:
+                line = f'<tr><td> {item} </td><td> {title} </td><td> {authors_links_str} </td></tr>\n'
+                if item not in existing_entries.keys():
                     current_line = content[insert_index]
                     item_num = -1
                     if '<tr><td>' in current_line:
-                        item_num = int(content[insert_index].split('<td>')[1] .split('</td>')[0].strip())
-                    while insert_index < table_end and item_num < item:
-                        insert_index += 1
+                        item_num = int(content[insert_index].split('<td>')[1].split('</td>')[0].strip())
+                        while insert_index > table_start and item_num > item:
+                            insert_index -= 1
                     content.insert(insert_index, line)
-                    table_end += 1  # 중요: 테이블 끝 위치 갱신
+                    # chapter_tables[chapter]['end'] += 1  # 중요: 테이블 끝 위치 갱신
+                    
                 else:
                     existing_index = content.index(existing_entries[item])
                     content[existing_index] = line
@@ -105,6 +91,26 @@ def update_readme():
         readme.seek(0)
         readme.writelines(content)
         readme.truncate()
+
+
+def find_chapter_table_index(content):
+    list_section_start_index = content.index('## 글 목록\n') + 1
+    list_section_end_index = content.index('------\n')
+    chapter_tables = {}
+    current_chapter = 0
+    # 장의 시작 위치와 테이블의 위치를 찾기
+    for i in range(list_section_start_index, list_section_end_index):
+        if re.search(r'^\s*### (\d+) 장', content[i]):
+            current_chapter = int(re.search(r'(\d+)', content[i]).group())
+            if current_chapter not in chapter_tables:
+                chapter_tables[current_chapter] = {'start': i + 1, 'end': i + 1}
+
+        if current_chapter and '<table>' in content[i]:
+            chapter_tables[current_chapter]['start'] = i
+        if current_chapter and '</table>' in content[i]:
+            chapter_tables[current_chapter]['end'] = i
+            current_chapter = 0
+    return chapter_tables
 
 
 if __name__ == '__main__':

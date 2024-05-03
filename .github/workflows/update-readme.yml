@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - '**/*.md'
+      - '**/*.py'
 
 jobs:
   update-readme:
