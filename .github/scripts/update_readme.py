@@ -14,7 +14,7 @@ def find_markdowns():
             if file.endswith('.md') and 'README' not in file:
                 rel_path = os.path.relpath(os.path.join(root, file), start=target_dir)  # Get relative path
                 md_files.append(rel_path)
-                md_files_with_absolute_path[rel_path].append(file)
+                md_files_with_absolute_path[rel_path] = file
     return md_files, readme_path, md_files_with_absolute_path
 
 
