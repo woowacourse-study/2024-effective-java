@@ -2,7 +2,10 @@
 
 ## 들어가기에 앞서 Hash란 무엇일까?
 
+
 해시 테이블은 효율적인 데이터 검색을 위해 널리 사용되는 데이터 구조 중 하나로, 키를 값에 매핑하여 데이터의 빠른 검색, 삽입, 삭제를 지원한다.
+
+
 
 ### 해시 테이블의 작동 원리
 
@@ -89,6 +92,12 @@ public class Person {
 result = 31 * result + Short.hashCode(name) ;
 result = 31 * result + Short.hashCode(age);
 ```
+
+
+ 
+(i << 5) - i = i * 31
+(i << 5) - i
+
 
 잎서 작성한 hashCode() 메서드를 살펴보면, 31이라는 뜬금 없는 숫자를 곱하여 hashCode를 만든다.
 
