@@ -6,6 +6,7 @@ def find_markdowns():
     base_dir = os.path.dirname(__file__)  # 스크립트 파일의 위치
     readme_path = os.path.join(base_dir, '../../README.md')
     md_files = []
+    md_files_with_absolute_path = {}
     # 변경된 .md 파일 탐색
     target_dir = os.path.abspath(os.path.join(base_dir, '../../'))
     for root, dirs, files in os.walk(target_dir):
@@ -13,7 +14,8 @@ def find_markdowns():
             if file.endswith('.md') and 'README' not in file:
                 rel_path = os.path.relpath(os.path.join(root, file), start=target_dir)  # Get relative path
                 md_files.append(rel_path)
-    return md_files, readme_path
+                md_files_with_absolute_path[rel_path].append(file)
+    return md_files, readme_path, md_files_with_absolute_path
 
 
 def parse_md_filename(filename):
@@ -24,11 +26,11 @@ def parse_md_filename(filename):
     match = re.match(pattern, filename)
     if match:
         return match.groups()
-    return None
+    raise Exception(filename)
 
 
 def update_readme():
-    md_files, readme_path = find_markdowns()
+    md_files, readme_path, md_files_with_absolute_path = find_markdowns()
     entries = {}
     chapters = set()
     for md_file in md_files:
@@ -40,8 +42,8 @@ def update_readme():
                 entries[key] = []
             entries[key].append((author, link))
             chapters.add(int(chapter))
-        except:
-            print("형식에 맞지 않는 파일 발견: " + md_file)
+        except Exception as e:
+            print('이거 이상한 파일인데요? -> ' + e + " path: " + md_files_with_absolute_path[e])
 
     sorted_entries = sorted(entries.items(),reverse=True)
     sorted_chapters = sorted(chapters,reverse=True)
