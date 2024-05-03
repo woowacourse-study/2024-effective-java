@@ -2,6 +2,9 @@ import os
 import re
 
 
+MEMBER_LIST = ["제우스", "켬미", "폰드", "도비", "호티", "초롱", "배키", "프람"]
+
+
 def find_markdowns():
     base_dir = os.path.dirname(__file__)  # 스크립트 파일의 위치
     readme_path = os.path.join(base_dir, '../../README.md')
@@ -36,15 +39,17 @@ def update_readme():
     for md_file in md_files:
         try:
             chapter, item, title, author = parse_md_filename(md_file)
-            key = (int(chapter), int(item), title)
-            link = f"https://github.com/{os.getenv('GITHUB_REPOSITORY')}/blob/master/{md_file}"
-            if key not in entries:
-                entries[key] = []
-            entries[key].append((author, link))
-            chapters.add(int(chapter))
+            if author in MEMBER_LIST:
+                key = (int(chapter), int(item), title)
+                link = f"https://github.com/{os.getenv('GITHUB_REPOSITORY')}/blob/master/{md_file}"
+                if key not in entries:
+                    entries[key] = []
+                entries[key].append((author, link))
+                chapters.add(int(chapter))
         except Exception as e:
             file_name = str(e)
-            print('이거 이상한 파일인데요? -> ' + file_name + " path: " + md_files_with_absolute_path[file_name])
+            print('이거 이상한 파일인데요? -> ' + file_name)
+            print("path: " + md_files_with_absolute_path[file_name])
 
     sorted_entries = sorted(entries.items(),reverse=True)
     sorted_chapters = sorted(chapters,reverse=True)
@@ -89,7 +94,7 @@ def update_readme():
                             insert_index -= 1
                     content.insert(insert_index, line)
                     # chapter_tables[chapter]['end'] += 1  # 중요: 테이블 끝 위치 갱신
-                    
+
                 else:
                     existing_index = content.index(existing_entries[item])
                     content[existing_index] = line
