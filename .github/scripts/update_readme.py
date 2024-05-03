@@ -41,7 +41,7 @@ def update_readme():
             entries[key].append((author, link))
             chapters.add(int(chapter))
         except:
-            print("형식에 맞지 않는 파일 발견: " + chapter, item, title, author)
+            print("형식에 맞지 않는 파일 발견: " + md_file)
         
 
     sorted_entries = sorted(entries.items(),reverse=True)
