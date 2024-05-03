@@ -40,8 +40,8 @@ def update_readme():
         entries[key].append((author, link))
         chapters.add(int(chapter))
 
-    sorted_entries = sorted(entries.items(),reverse=true)
-    sorted_chapters = sorted(chapters,reverse=true)
+    sorted_entries = sorted(entries.items(),reverse=True)
+    sorted_chapters = sorted(chapters,reverse=True)
 
     with open(readme_path, 'r+', encoding="UTF-8") as readme:
         content = readme.readlines()
