@@ -142,6 +142,11 @@
 </table>
 
 ### 5 장
+<table>
+<tr><th>아이템🍳</th><th>주제</th><th>작성자의 글</th></tr>
+<tr><td> 29 </td><td> 이왕이면 제네릭 타입으로 만들라 </td><td> <a href="https://github.com/zeus6768/2024-effective-java/blob/master/05장/아이템_29/이왕이면_제네릭_타입으로_만들라_제우스.md">제우스의 글</a> </td></tr>
+<tr><td> 30 </td><td> 이왕이면 제네릭 메서드로 만들라 </td><td> <a href="https://github.com/zeus6768/2024-effective-java/blob/master/05장/아이템_30/이왕이면_제네릭_메서드로_만들라_제우스.md">제우스의 글</a> </td></tr>
+</table>
 
 ### 6 장
 
