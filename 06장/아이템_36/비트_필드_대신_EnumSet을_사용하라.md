@@ -81,5 +81,5 @@ Enum Set 역시 내부적으로 Bit 연산을 하기 때문에 속도 역시 bit
 --- 
 
 
-[1] Bit Field 
+[[1] Bit Field](http://underpop.online.fr/j/java/hardcore-java/hardcorejv-chp-7-sect-2.html) 
 
