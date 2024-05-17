@@ -120,9 +120,84 @@ System.out.println(Arrays.stream(garden)
 				  () -> new EnumMap<>(LifeCycle.class), toSet())));
 ```
 
+
 #### 이렇게하면 EnumMap과 아예 똑같나?
 
 살짝 다름
 
 - EnumMap : 언제나 식물의 생애주기당 하나씩 중첩 맵을 제작
 - Stream : 해당 생애주기에 속하는 식물이 있을 때만 제작
+
+
+<br>
+
+# 두 열거 타입 값들을 매핑
+
+<br>
+
+## Ordinal을 써볼까?
+
+두가지 상태(Phase)를 전이(Transition)와 매핑하는 프로그램
+
+```java
+public enum Phase {
+	SOLID, LIQUID, GAS;
+
+	public enum Transition {
+		MELT, FREEZE, BOIL, CONDENSE, SUBLIME, DEPOSIT;
+
+		private static final Transition[][] = {
+			{ null, MELT, SUBLIME },
+			{ FREEZE, null, BOIL },
+			{ DEPOSIT, CONDENSE, null }
+		};
+
+		public static Transition from(Phase from, Phase to) {
+			return TRANSITIONS[from.ordinal()][to.ordinal()];
+		}
+	}
+}
+```
+
+- 위에 예제와 동일한 단점
+- Phase나 Phase.Transition 열거 타입을 수정ㅇ하면서 상전이 표 TRANSITIONS를 함께 수정하지 않거나, 실수가 일어나면 런타임 오류 발생
+- null 도 점차 많아진다
+
+<br>
+
+## 그럼 어떡해? -> EnumMap 사용
+
+```java
+  
+public enum Phase {  
+    SOLID, LIQUID, GAS;  
+  
+    public enum Transition {  
+        MELT(SOLID, LIQUID), FREEZE(LIQUID, SOLID),  
+        BOIL(LIQUID, GAS), CONDENSE(GAS, LIQUID),  
+        SUBLIME(SOLID, GAS), DEPOSIT(GAS, SOLID);  
+  
+        private final Phase from;  
+        private final Phase to;  
+  
+        Transition(Phase from, Phase to) {  
+            this.from = from;  
+            this.to = to;  
+        }  
+  
+        // 맵 초기화  
+        private static final Map<Phase, Map<Phase, Transition>>  
+                m = Stream.of(values())  
+                .collect(  
+                        groupingBy(t -> t.from,   
+                                () -> new EnumMap<>(Phase.class),   
+                                toMap(t -> t.to, t -> t,   
+                                        (x, y) -> y,  
+                                        () -> new EnumMap<>(Phase.class))));  
+          
+        public static Transition from(Phase from, Phase to) {  
+            return m.get(from).get(to);  
+        }  
+    }  
+}
+```
