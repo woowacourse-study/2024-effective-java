@@ -146,14 +146,6 @@
 </table>
 
 ### 5 장
-<table>
-<tr><th>아이템🍳</th><th>주제</th><th>작성자의 글</th></tr>
-<tr><td> 26 </td><td> 로 타입은 사용하지 말라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/05장/아이템_26/로_타입은_사용하지_말라_폰드.md">폰드의 글</a> </td></tr>
-<tr><td> 27 </td><td> 비검사 경고를 제거하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/05장/아이템_27/비검사_경고를_제거하라_프람.md">프람의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/05장/아이템_27/비검사_경고를_제거하라_배키.md">배키의 글</a> </td></tr>
-<tr><td> 28 </td><td> 배열보다는 리스트를 사용하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/05장/아이템_28/배열보다는_리스트를_사용하라_배키.md">배키의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/05장/아이템_28/배열보다는_리스트를_사용하라_프람.md">프람의 글</a> </td></tr>
-<tr><td> 29 </td><td> 이왕이면 제네릭 타입으로 만들라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/05장/아이템_29/이왕이면_제네릭_타입으로_만들라_제우스.md">제우스의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/05장/아이템_29/이왕이면_제네릭_타입으로_만들라_켬미.md">켬미의 글</a> </td></tr>
-<tr><td> 30 </td><td> 이왕이면 제네릭 메서드로 만들라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/05장/아이템_30/이왕이면_제네릭_메서드로_만들라_제우스.md">제우스의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/05장/아이템_30/이왕이면_제네릭_메서드로_만들라_켬미.md">켬미의 글</a> </td></tr>
-</table>
 
 ### 6 장
 
