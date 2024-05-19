@@ -153,6 +153,7 @@
 <tr><td> 30 </td><td> 이왕이면 제네릭 메서드로 만들라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/05장/아이템_30/이왕이면_제네릭_메서드로_만들라_제우스.md">제우스의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/05장/아이템_30/이왕이면_제네릭_메서드로_만들라_켬미.md">켬미의 글</a> </td></tr>
 <tr><td> 32 </td><td> 제네릭과 가변인수를 함께 쓸 때는 신중하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/05장/아이템_32/제네릭과_가변인수를_함께_쓸_때는_신중하라_초롱.md">초롱의 글</a> </td></tr>
 <tr><td> 33 </td><td> 타입 안전 이종 컨테이너를 고려하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/05장/아이템_33/타입_안전_이종_컨테이너를_고려하라_폰드.md">폰드의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/05장/아이템_33/타입_안전_이종_컨테이너를_고려하라_초롱.md">초롱의 글</a> </td></tr>
+<tr><td> 31 </td><td> 한정적 와일드카드를 사용해 API 유연성을 높이라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/05장/아이템_31/한정적_와일드카드를_사용해_API_유연성을_높이라_도비.md">도비의 글</a> </td></tr>
 </table>
 
 ### 6 장
