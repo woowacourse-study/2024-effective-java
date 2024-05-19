@@ -163,6 +163,7 @@
 <tr><td> 35 </td><td> ordinal 메서드 대신 인스턴스 필드를 사용하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/06장/아이템_35/ordinal_메서드_대신_인스턴스_필드를_사용하라_배키.md">배키의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/06장/아이템_35/ordinal_메서드_대신_인스턴스_필드를_사용하라_제우스.md">제우스의 글</a> </td></tr>
 <tr><td> 36 </td><td> 비트 필드 대신 EnumSet을 사용하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/06장/아이템_36/비트_필드_대신_EnumSet을_사용하라_켬미.md">켬미의 글</a> </td></tr>
 <tr><td> 37 </td><td> ordinal 인덱싱 대신 EnumMap을 사용하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/06장/아이템_37/ordinal_인덱싱_대신_EnumMap을_사용하라_켬미.md">켬미의 글</a> </td></tr>
+<tr><td> 38 </td><td> 확장할 수 있는 열거 타입이 필요하면 인터페이스를 사용하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/06장/아이템_38/확장할_수_있는_열거_타입이_필요하면_인터페이스를_사용하라_도비.md">도비의 글</a> </td></tr>
 </table>
 
 ### 7 장
