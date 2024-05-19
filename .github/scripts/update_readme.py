@@ -46,6 +46,8 @@ def update_readme():
                     entries[key] = []
                 entries[key].append((author, link))
                 chapters.add(int(chapter))
+            else:
+                print('어떻게 사람 이름이 ', author, '?')
         except Exception as e:
             file_name = str(e)
             print('이거 이상한 파일인데요? -> ' + file_name)
