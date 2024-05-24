@@ -138,7 +138,7 @@
 <tr><td> 20 </td><td> 추상 클래스보다는 인터페이스를 우선하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/04장/아이템_20/추상_클래스보다는_인터페이스를_우선하라_도비.md">도비의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/04장/아이템_20/추상_클래스보다는_인터페이스를_우선하라_켬미.md">켬미의 글</a> </td></tr>
 <tr><td> 21 </td><td> 인터페이스는 구현하는 쪽을 생각해 설계하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/04장/아이템_21/인터페이스는_구현하는_쪽을_생각해_설계하라_폰드.md">폰드의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/04장/아이템_21/인터페이스는_구현하는_쪽을_생각해_설계하라_배키.md">배키의 글</a> </td></tr>
 <tr><td> 22 </td><td> 인터페이스는 타입을 정의하는 용도로만 사용하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/04장/아이템_22/인터페이스는_타입을_정의하는_용도로만_사용하라_폰드.md">폰드의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/04장/아이템_22/인터페이스는_타입을_정의하는_용도로만_사용하라_배키.md">배키의 글</a> </td></tr>
-<tr><td> 23 </td><td> 태그 달린 클래스보다는 클래스 계층구조를 활용하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/04장/아이템_23/태그_달린_클래스보다는_클래스_계층구조를_활용하라_호티.md">호티의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/04장/아이템_23/태그_달린_클래스보다는_클래스_계층구조를_활용하라_프람.md">프람의 글</a> </td></tr>
+<tr><td> 23 </td><td> 태그 달린 클래스보다는 클래스 계층구조를 활요하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/04장/아이템_23/태그_달린_클래스보다는_클래스_계층구조를_활요하라_프람.md">프람의 글</a> </td></tr>
 <tr><td> 24 </td><td> 멤버 클래스는 되도록 static으로 만들라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/04장/아이템_24/멤버_클래스는_되도록_static으로_만들라_호티.md">호티의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/04장/아이템_24/멤버_클래스는_되도록_static으로_만들라_초롱.md">초롱의 글</a> </td></tr>
 <tr><td> 25 </td><td> 톱 레벨 클래스는 한 파일에 하나만 담으라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/04장/아이템_25/톱_레벨_클래스는_한_파일에_하나만_담으라_초롱.md">초롱의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/04장/아이템_25/톱_레벨_클래스는_한_파일에_하나만_담으라_호티.md">호티의 글</a> </td></tr>
 </table>
@@ -166,6 +166,7 @@
 <tr><td> 37 </td><td> ordinal 인덱싱 대신 EnumMap을 사용하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/06장/아이템_37/ordinal_인덱싱_대신_EnumMap을_사용하라_켬미.md">켬미의 글</a> </td></tr>
 <tr><td> 38 </td><td> 확장할 수 있는 열거 타입이 필요하면 인터페이스를 사용하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/06장/아이템_38/확장할_수_있는_열거_타입이_필요하면_인터페이스를_사용하라_도비.md">도비의 글</a> </td></tr>
 <tr><td> 40 </td><td> @Override 애너테이션을 일관되게 사용하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/06장/아이템_40/@Override_애너테이션을_일관되게_사용하라_폰드.md">폰드의 글</a> </td></tr>
+<tr><td> 39 </td><td> 명명 패턴보다 애너테이션을 사용하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/06장/아이템_39/명명_패턴보다_애너테이션을_사용하라_폰드.md">폰드의 글</a> </td></tr>
 </table>
 
 ### 7 장
