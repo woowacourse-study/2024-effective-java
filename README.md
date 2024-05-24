@@ -167,6 +167,10 @@
 </table>
 
 ### 7 장
+<table>
+<tr><th>아이템🍳</th><th>주제</th><th>작성자의 글</th></tr>
+<tr><td> 45 </td><td> 스트림은 주의해서 사용하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/07장/아이템_45/스트림은_주의해서_사용하라_제우스.md">제우스의 글</a> </td></tr>
+</table>
 
 ### 8 장
 
