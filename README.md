@@ -139,10 +139,8 @@
 <tr><td> 21 </td><td> 인터페이스는 구현하는 쪽을 생각해 설계하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/04장/아이템_21/인터페이스는_구현하는_쪽을_생각해_설계하라_폰드.md">폰드의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/04장/아이템_21/인터페이스는_구현하는_쪽을_생각해_설계하라_배키.md">배키의 글</a> </td></tr>
 <tr><td> 22 </td><td> 인터페이스는 타입을 정의하는 용도로만 사용하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/04장/아이템_22/인터페이스는_타입을_정의하는_용도로만_사용하라_폰드.md">폰드의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/04장/아이템_22/인터페이스는_타입을_정의하는_용도로만_사용하라_배키.md">배키의 글</a> </td></tr>
 <tr><td> 23 </td><td> 태그 달린 클래스보다는 클래스 계층구조를 활요하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/04장/아이템_23/태그_달린_클래스보다는_클래스_계층구조를_활요하라_프람.md">프람의 글</a> </td></tr>
-<tr><td> 23 </td><td> 태그 달린 클래스보다는 클래스 계층구조를 활용하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/04장/아이템_23/태그_달린_클래스보다는_클래스_계층구조를_활용하라_호티.md">호티의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/04장/아이템_23/태그_달린_클래스보다는_클래스_계층구조를_활용하라_프람.md">프람의 글</a> </td></tr>
 <tr><td> 24 </td><td> 멤버 클래스는 되도록 static으로 만들라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/04장/아이템_24/멤버_클래스는_되도록_static으로_만들라_호티.md">호티의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/04장/아이템_24/멤버_클래스는_되도록_static으로_만들라_초롱.md">초롱의 글</a> </td></tr>
-<tr><td> 25 </td><td> 톱 레벨 클래스는 한 파일에 하나만 담으라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/04장/아이템_25/톱_레벨_클래스는_한_파일에_하나만_담으라_호티.md">호티의 글</a> </td></tr>
-<tr><td> 25 </td><td> 톱레벨 클래스는 한 파일에 하나만 담으라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/04장/아이템_25/톱레벨_클래스는_한_파일에_하나만_담으라_초롱.md">초롱의 글</a> </td></tr>
+<tr><td> 25 </td><td> 톱 레벨 클래스는 한 파일에 하나만 담으라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/04장/아이템_25/톱_레벨_클래스는_한_파일에_하나만_담으라_초롱.md">초롱의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/04장/아이템_25/톱_레벨_클래스는_한_파일에_하나만_담으라_호티.md">호티의 글</a> </td></tr>
 </table>
 
 ### 5 장
@@ -153,11 +151,29 @@
 <tr><td> 28 </td><td> 배열보다는 리스트를 사용하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/05장/아이템_28/배열보다는_리스트를_사용하라_배키.md">배키의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/05장/아이템_28/배열보다는_리스트를_사용하라_프람.md">프람의 글</a> </td></tr>
 <tr><td> 29 </td><td> 이왕이면 제네릭 타입으로 만들라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/05장/아이템_29/이왕이면_제네릭_타입으로_만들라_제우스.md">제우스의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/05장/아이템_29/이왕이면_제네릭_타입으로_만들라_켬미.md">켬미의 글</a> </td></tr>
 <tr><td> 30 </td><td> 이왕이면 제네릭 메서드로 만들라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/05장/아이템_30/이왕이면_제네릭_메서드로_만들라_제우스.md">제우스의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/05장/아이템_30/이왕이면_제네릭_메서드로_만들라_켬미.md">켬미의 글</a> </td></tr>
+<tr><td> 31 </td><td> 한정적 와일드카드를 사용해 API 유연성을 높이라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/05장/아이템_31/한정적_와일드카드를_사용해_API_유연성을_높이라_도비.md">도비의 글</a> </td></tr>
+<tr><td> 32 </td><td> 제네릭과 가변인수를 함께 쓸 때는 신중하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/05장/아이템_32/제네릭과_가변인수를_함께_쓸_때는_신중하라_초롱.md">초롱의 글</a> </td></tr>
+<tr><td> 33 </td><td> 타입 안전 이종 컨테이너를 고려하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/05장/아이템_33/타입_안전_이종_컨테이너를_고려하라_폰드.md">폰드의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/05장/아이템_33/타입_안전_이종_컨테이너를_고려하라_초롱.md">초롱의 글</a> </td></tr>
 </table>
 
 ### 6 장
+<tr><td> 39 </td><td> 명명 패턴보다 애너테이션을 사용하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/06장/아이템_39/명명_패턴보다_애너테이션을_사용하라_폰드.md">폰드의 글</a> </td></tr>
+<table>
+<tr><th>아이템🍳</th><th>주제</th><th>작성자의 글</th></tr>
+<tr><td> 34 </td><td> int 상수 대신 열거 타입을 사용하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/06장/아이템_34/int_상수_대신_열거_타입을_사용하라_제우스.md">제우스의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/06장/아이템_34/int_상수_대신_열거_타입을_사용하라_배키.md">배키의 글</a> </td></tr>
+<tr><td> 35 </td><td> ordinal 메서드 대신 인스턴스 필드를 사용하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/06장/아이템_35/ordinal_메서드_대신_인스턴스_필드를_사용하라_배키.md">배키의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/06장/아이템_35/ordinal_메서드_대신_인스턴스_필드를_사용하라_제우스.md">제우스의 글</a> </td></tr>
+<tr><td> 36 </td><td> 비트 필드 대신 EnumSet을 사용하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/06장/아이템_36/비트_필드_대신_EnumSet을_사용하라_켬미.md">켬미의 글</a> </td></tr>
+<tr><td> 37 </td><td> ordinal 인덱싱 대신 EnumMap을 사용하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/06장/아이템_37/ordinal_인덱싱_대신_EnumMap을_사용하라_켬미.md">켬미의 글</a> </td></tr>
+<tr><td> 38 </td><td> 확장할 수 있는 열거 타입이 필요하면 인터페이스를 사용하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/06장/아이템_38/확장할_수_있는_열거_타입이_필요하면_인터페이스를_사용하라_도비.md">도비의 글</a> </td></tr>
+<tr><td> 40 </td><td> @Override 애너테이션을 일관되게 사용하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/06장/아이템_40/@Override_애너테이션을_일관되게_사용하라_폰드.md">폰드의 글</a> </td></tr>
+<tr><td> 39 </td><td> 명명 패턴보다 애너테이션을 사용하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/06장/아이템_39/명명_패턴보다_애너테이션을_사용하라_폰드.md">폰드의 글</a> </td></tr>
+</table>
 
 ### 7 장
+<table>
+<tr><th>아이템🍳</th><th>주제</th><th>작성자의 글</th></tr>
+<tr><td> 45 </td><td> 스트림은 주의해서 사용하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/07장/아이템_45/스트림은_주의해서_사용하라_제우스.md">제우스의 글</a> </td></tr>
+</table>
 
 ### 8 장
 
