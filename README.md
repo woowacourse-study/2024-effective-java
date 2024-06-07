@@ -135,7 +135,7 @@
 <tr><td> 17 </td><td> 변경 가능성을 최소화하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/04장/아이템_17/변경_가능성을_최소화하라_초롱.md">초롱의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/04장/아이템_17/변경_가능성을_최소화하라_프람.md">프람의 글</a> </td></tr>
 <tr><td> 18 </td><td> 상속보다는 컴포지션을 사용하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/04장/아이템_18/상속보다는_컴포지션을_사용하라_켬미.md">켬미의 글</a> </td></tr>
 <tr><td> 19 </td><td> 상속을 고려해 설계하고 문서화하라. 그러지 않았다면 상속을 금지하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/04장/아이템_19/상속을_고려해_설계하고_문서화하라._그러지_않았다면_상속을_금지하라_호티.md">호티의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/04장/아이템_19/상속을_고려해_설계하고_문서화하라._그러지_않았다면_상속을_금지하라_프람.md">프람의 글</a> </td></tr>
-<tr><td> 20 </td><td> 추상 클래스보다는 인터페이스를 우선하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/04장/아이템_20/추상_클래스보다는_인터페이스를_우선하라_도비.md">도비의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/04장/아이템_20/추상_클래스보다는_인터페이스를_우선하라_켬미.md">켬미의 글</a> </td></tr>
+<tr><td> 20 </td><td> 추상 클래스보다는 인터페이스를 사용하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/04장/아이템_20/추상_클래스보다는_인터페이스를_사용하라_도비.md">도비의 글</a> </td></tr>
 <tr><td> 21 </td><td> 인터페이스는 구현하는 쪽을 생각해 설계하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/04장/아이템_21/인터페이스는_구현하는_쪽을_생각해_설계하라_폰드.md">폰드의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/04장/아이템_21/인터페이스는_구현하는_쪽을_생각해_설계하라_배키.md">배키의 글</a> </td></tr>
 <tr><td> 22 </td><td> 인터페이스는 타입을 정의하는 용도로만 사용하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/04장/아이템_22/인터페이스는_타입을_정의하는_용도로만_사용하라_폰드.md">폰드의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/04장/아이템_22/인터페이스는_타입을_정의하는_용도로만_사용하라_배키.md">배키의 글</a> </td></tr>
 <tr><td> 23 </td><td> 태그 달린 클래스보다는 클래스 계층구조를 활용하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/04장/아이템_23/태그_달린_클래스보다는_클래스_계층구조를_활용하라_호티.md">호티의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/04장/아이템_23/태그_달린_클래스보다는_클래스_계층구조를_활용하라_프람.md">프람의 글</a> </td></tr>
@@ -187,7 +187,7 @@
 <tr><td> 51 </td><td> 메서드 시그니처를 신중히 설계하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/08장/아이템_51/메서드_시그니처를_신중히_설계하라_호티.md">호티의 글</a>, <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/08장/아이템_51/메서드_시그니처를_신중히_설계하라_초롱.md">초롱의 글</a> </td></tr>
 <tr><td> 52 </td><td> 다중정의는 신중히 사용하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/08장/아이템_52/다중정의는_신중히_사용하라_호티.md">호티의 글</a> </td></tr>
 <tr><td> 53 </td><td> 가변 인수는 신중히 사용하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/08장/아이템_53/가변_인수는_신중히_사용하라_폰드.md">폰드의 글</a> </td></tr>
-<tr><td> 53 </td><td> 가변인수는 신중히 사용하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/08장/아이템_53/가변인수는_신중히_사용하라_켬미.md">켬미의 글</a> </td></tr>
+<tr><td> 53 </td><td> 가변 인수는 신중히 사용하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/08장/아이템_53/가변_인수는_신중히_사용하라_폰드.md">폰드의 글</a> </td></tr>
 </table>
 
 ### 9 장
