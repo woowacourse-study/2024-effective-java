@@ -190,14 +190,6 @@
 <tr><td> 53 </td><td> 가변 인수는 신중히 사용하라 </td><td> <a href="https://github.com/woowacourse-study/2024-effective-java/blob/master/08장/아이템_53/가변_인수는_신중히_사용하라_폰드.md">폰드의 글</a> </td></tr>
 </table>
 
-### 9 장
-
-### 10 장
-
-### 11 장
-
-### 12 장
-
 </div>
 
 ------
